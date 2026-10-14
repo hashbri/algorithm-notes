@@ -1,0 +1,32 @@
+# ---- Python ----
+__pycache__/
+*.py[codz]
+*$py.class
+*.so
+
+# ---- 虚拟环境 ----
+.venv/
+venv/
+env/
+ENV/
+
+# ---- IDE ----
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# ---- 运行产物（这些不该进版本库）----
+scores.json
+scores.json.bak
+scores.txt
+*.log
+
+# ---- 系统 ----
+.DS_Store
+Thumbs.db
+
+# ---- 临时/备份 ----
+*.bak
+*.tmp
+_tmp/
