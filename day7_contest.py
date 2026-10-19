@@ -50,7 +50,20 @@ def problem(name):
 # 【提示】"出现在几篇"要先去重再数 —— 同一篇里重复出现的词只算 1 篇。
 @problem("P1")
 def P1():
-    pass
+    n,m=map(int,input().split())
+    data=[]
+    for s in range(n):
+        a= list(map(int, input().split()))
+        data.append(a[1:])
+    for i in range(1,m+1):
+        cnt_a=0
+        cnt_b=0
+        for x in data:
+            if i in x:
+                cnt_a+=1
+            cnt_b+=x.count(i)
+        print(cnt_a,cnt_b)
+
 
 
 # ======================================================================
@@ -71,7 +84,17 @@ def P1():
 #         bin(12) 得到 '0b1100'，开头两个字符是前缀，切片 [2:] 去掉它。
 @problem("P2")
 def P2():
-    pass
+    n=int(input())
+    data=list(map(int,input().split()))
+    ans=0
+    for i in data:
+        s=bin(i)[2:]
+        if s.count("1")==s.count("0"):
+            ans+=1
+    print(ans)
+
+
+
 
 
 # ======================================================================
