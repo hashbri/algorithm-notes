@@ -1,9 +1,9 @@
 """
-Day4 加练 · 查找 / 二分 / 贪心  ——  23 个测试用例，先跑再交
+binary_search.py 加练 · 查找 / 二分 / 贪心  ——  23 个测试用例，先跑再交
 
 用法：
-    python day4_extra.py            # 跑全部（先看演示，再自检）
-    python day4_extra.py ex3        # 只跑 ex3
+    python binary_search_drill.py            # 跑全部（先看演示，再自检）
+    python binary_search_drill.py ex3        # 只跑 ex3
 
 分组：
     A 组  ex1~ex4   二分（你的重点：命中 / 下界 / 上界 / 用库）
@@ -338,7 +338,7 @@ def ex9():
         输入 5 / 1 2 2 3 3   → 输出 1
         输入 7 / 4 4 5 6 6 7 7   → 输出 5
 
-    ── 工具：Counter（Day2 用过，这里复习）──
+    ── 工具：Counter（sorting.py 用过，这里复习）──
         cnt = Counter(arr)
         ans = sorted(k for k, v in cnt.items() if v == 1)
         print(*ans) if ans else print(-1)
@@ -357,7 +357,7 @@ def ex10():
         输入 1 2 3 4 5 6   → 输出 1 3 5   （下标 1、3、5 的值是 2、4、6）
         输入 1 3 5         → 输出 -1
 
-    ── 工具：列表推导式（这是 Day4 工具清单的最后一项）──
+    ── 工具：列表推导式（这是 binary_search.py 工具清单的最后一项）──
         老写法（for + append 三步）：
             idx = []
             for i, v in enumerate(arr):

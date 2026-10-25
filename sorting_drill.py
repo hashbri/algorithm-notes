@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Day 2 加练 · 12 道 —— 2026-10-07
+加练 · 12 道 —— 2026-10-07
 
 你自己的定位：
     ex3（多关键字排序）、ex4（Counter 并列规则）最不熟练
@@ -10,8 +10,8 @@ Day 2 加练 · 12 道 —— 2026-10-07
 
 用法：
     1) 填下面每个 def exN() 的函数体（把 raise NotImplementedError 那一行删掉）
-    2) 全填完跑：  python day2_extra.py
-    3) 只跑某一道： python day2_extra.py ex4
+    2) 全填完跑：  python sorting_drill.py
+    3) 只跑某一道： python sorting_drill.py ex4
 
 ═══ 本次要刻进肌肉记忆的三条 ═══
     ① 一行若干整数   → list(map(int, input().split()))

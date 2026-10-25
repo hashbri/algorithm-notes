@@ -1,12 +1,12 @@
 # -*- coding: utf-8 -*-
 """
-Day 1 加练 · 输入输出四模板全覆盖 —— 2026-10-07
+加练 · 输入输出四模板全覆盖 —— 2026-10-07
 
 用法：
     1) 逐个填函数，填一个测一个：
-         printf '输入内容' | python -c "import day1_extra; day1_extra.ex1()"
-    2) 每道题的文档字符串里写了 "用模板X"，卡住了去看 day1_io.py 顶部。
-    3) 全部填完，跑 python day1_extra.py 看自检结果。
+         printf '输入内容' | python -c "import io_input_drill; io_input_drill.ex1()"
+    2) 每道题的文档字符串里写了 "用模板X"，卡住了去看 io_input.py 顶部。
+    3) 全部填完，跑 python io_input_drill.py 看自检结果。
 
 注意：OJ 判题时 input() 里绝对不能写提示语！这里是本地练习，
       我把提示语也省略了，养成习惯。
