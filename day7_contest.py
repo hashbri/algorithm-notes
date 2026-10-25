@@ -119,7 +119,24 @@ def P2():
 #         这样自然就是"编号最小的那个"。
 @problem("P3")
 def P3():
-    pass
+    n,m=map(int,input().split())
+    data = [[0] * m]
+    for i in range(1,n+1):
+        num=list(map(int,input().split()))
+        data.append(num)
+    for s in range(1,n+1):
+        ans=0
+        for h in range(1,n+1):
+            flag=True
+            for y in range(m):
+                if data[s][y]>=data[h][y]:
+                    flag=False
+                    break
+            if flag:
+                ans=h
+                break
+        print(ans)
+
 
 
 # ======================================================================
