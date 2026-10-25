@@ -6,7 +6,7 @@
     你问："继续算法训练吧，还是要学 Python 语言？"
     答：算法是主线，但"语言工具"确实得补 —— 只是不用单独开课，跟着题目学。
 
-    你已经会了的（io_input.py~simulation.py）：
+    你已经会了的（001_io_input.py~005_simulation.py）：
         input / map / split / list / sort / sorted / lambda
         Counter / // / % / [::-1] / strip / abs
 
@@ -18,7 +18,7 @@
         bisect           现成的二分查找
         列表推导式        一行代替"建空表 + for + append"
 
-    binary_search.py 的每道题都绑一个新工具。做完这 8 道，武器库就齐了。
+    006_binary_search.py 的每道题都绑一个新工具。做完这 8 道，武器库就齐了。
 
 ═══ 今天的算法主题：查找 ═══
     查找 = 在一堆数据里找某个东西。
@@ -34,8 +34,8 @@
     最后两题（ex7 / ex8）是【贪心】入门 —— 冲刺手册 10/10 的内容。
 
 ═══ 用法 ═══
-    python binary_search.py          # 跑全部
-    python binary_search.py ex3      # 只跑 ex3
+    python 006_binary_search.py          # 跑全部
+    python 006_binary_search.py ex3      # 只跑 ex3
 """
 import bisect
 import sys

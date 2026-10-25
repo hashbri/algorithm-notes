@@ -10,8 +10,8 @@
 
 用法：
     1) 填下面每个 def exN() 的函数体（把 raise NotImplementedError 那一行删掉）
-    2) 全填完跑：  python sorting_drill.py
-    3) 只跑某一道： python sorting_drill.py ex4
+    2) 全填完跑：  python 004_sorting_drill.py
+    3) 只跑某一道： python 004_sorting_drill.py ex4
 
 ═══ 本次要刻进肌肉记忆的三条 ═══
     ① 一行若干整数   → list(map(int, input().split()))

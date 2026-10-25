@@ -1,7 +1,7 @@
-# bitwise.py —— 碎片时间小题集（8 道，每道 10~15 分钟）
+# 011_bitwise.py —— 碎片时间小题集（8 道，每道 10~15 分钟）
 #
 # 为什么有这份卷子：
-#   contest_replay.py 的三道竞赛题需要完整安静的时间，先放着。
+#   010_contest_replay.py 的三道竞赛题需要完整安静的时间，先放着。
 #   这份是为"只有十几二十分钟"设计的 —— 每道独立、短小，
 #   而且每一道都对着你踩过的坑：
 #
@@ -12,11 +12,11 @@
 #     Q5  手写循环找最大                         （并列取第一个）
 #     Q6  range(1, n+1) 的右开                   （你漏过最后一个）
 #     Q7  循环里更新同一个变量                    （int/str 来回转）
-#     Q8  二分下界模板：第一个 > x               （和 binary_search.py 的 >= 只差一个符号）
+#     Q8  二分下界模板：第一个 > x               （和 006_binary_search.py 的 >= 只差一个符号）
 #
 # 用法：
-#   python bitwise.py          跑全卷自检
-#   python bitwise.py Q3       只跑第 3 题
+#   python 011_bitwise.py          跑全卷自检
+#   python 011_bitwise.py Q3       只跑第 3 题
 #
 # 老规矩：期望值全部用参考解跑出来的，不是手写的。
 # 跑完 push 到 GitHub —— 你的绿点就是这么攒的。
@@ -202,7 +202,7 @@ def Q7():
 #        （从 0 开始）。如果没有，输出 -1。
 # 【输入】第 1 行：n；第 2 行：n 个升序整数；第 3 行：x
 # 【输出】一个整数（下标或 -1）
-# 【提示】这就是 binary_search.py 的"下界模板"，只是把 >= 换成 > ：
+# 【提示】这就是 006_binary_search.py 的"下界模板"，只是把 >= 换成 > ：
 #           第一个 >= x 用  data[mid] < x  → left = mid + 1
 #           第一个 >  x 用  data[mid] <= x → left = mid + 1
 #        循环结束后 left 就是答案位置；如果 left == n 说明没有。
@@ -317,7 +317,7 @@ def self_check(only=None):
             cnt = sum(1 for c in CHECKS if c[0] == name)
             print(f"  {name}  {per.get(name, 0)} / {cnt}")
     print()
-    print("碎片时间使用建议：一次只做一道，做完跑 python bitwise.py Q某 看 3 个用例全绿就换下一道。")
+    print("碎片时间使用建议：一次只做一道，做完跑 python 011_bitwise.py Q某 看 3 个用例全绿就换下一道。")
     print("顺序建议：Q4 最短，适合找手感 → Q1~Q3 练返回值 → Q6~Q7 练循环 → Q8 收尾。")
 
 

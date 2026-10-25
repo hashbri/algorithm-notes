@@ -1,4 +1,4 @@
-# contest_replay.py —— 校内赛原题重做（可做的三道）
+# 010_contest_replay.py —— 校内赛原题重做（可做的三道）
 #
 # 为什么有这份卷子：
 #   10/14 校内赛 5 道题，你只打开了第 4 道（石子合并 = 区间 DP），死磕 2 小时。
@@ -9,8 +9,8 @@
 #   所以这不是"补课"，是"把当天本来就该拿的分拿回来"。
 #
 # 用法：
-#   python contest_replay.py          跑全卷自检
-#   python contest_replay.py P1       只跑第 1 题
+#   python 010_contest_replay.py          跑全卷自检
+#   python 010_contest_replay.py P1       只跑第 1 题
 #
 # ⚠️ 关于用例：平台的「样例输入 / 样例输出」框在截图里被切掉了，
 #    所以下面的用例是我自制的，期望值全部用参考解先跑出来 ——

@@ -18,8 +18,8 @@
     ③ 数清楚：循环从哪到哪？一共几次？下标从 0 还是 1？
 
 ═══ 用法 ═══
-    python simulation.py           # 跑全部
-    python simulation.py ex3       # 只跑 ex3
+    python 005_simulation.py           # 跑全部
+    python 005_simulation.py ex3       # 只跑 ex3
 """
 
 import sys

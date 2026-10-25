@@ -11,27 +11,30 @@
 
 ## 文件索引（按学习顺序）
 
-| 文件 | 主题 | 起始 | 核心收获 |
-|---|---|---|---|
-| `io_input.py` | 输入输出四件套 | 10-07 | `input()` 一次一行；输出格式是第一考点 |
-| `io_input_drill.py` | IO 加练 | 10-07 | 字符串切片、格式化输出 |
-| `sorting.py` | 列表与排序 | 10-07 | `sort()` 原地修改 vs `sorted()` 返回新对象 |
-| `sorting_drill.py` | 排序加练 | 10-07 | 多关键字排序、`key=` 参数 |
-| `simulation.py` | 基础模拟 | 10-08 | 模拟题的步骤拆解 |
-| `binary_search.py` | 二分查找 + 贪心入门 | 10-09 | **两套模板**：命中查找 / 下界查找 |
-| `binary_search_drill.py` | 二分 / 贪心加练 | 10-10 | 上界查找（复用下界骨架）、贪心入门 |
-| `mock_exam.py` | 全真模拟卷 | 10-11 | 三档分层策略：必拿 / 可争 / 放弃 |
-| `recall_test.py` | 闭卷默写卷 | 10-11 | 7 道换皮题，检验是否真掌握 |
-| `contest_replay.py` | 校内赛原题重做 | 10-14 | 校内赛能做的三道题（12/12） |
-| `bitwise.py` | 位运算 + 碎片小题 | 10-17 | 拆位、进制转换、二分下界复用 |
-| `prefix_sum.py` | 前缀和 | 10-18 | `pre[0]=0`，区间和 = `pre[r] - pre[l-1]` |
-| `fill_blank.py` | 结果填空题本 | 10-22 | 蓝桥填空题专用本，**代码 + 手算双验** |
-| `contest_io_template.py` | 竞赛 IO 模板 | 10-06 | 快速读取、多组数据 |
-| `practice_return.py` | 返回值专题 | 09-21 | 混淆"原地修改型"与"返回结果型"的代价 |
-| `practice_return_quiz.py` | 返回值自测 | 09-21 | — |
-| `知识点.py` | 笔记碎片 | 09-25 | — |
+> **三位编号 ＝ 进仓库时的排列顺序**。001~013 是主学习线；014 以后是工具模板和杂项，不影响阅读顺序。
+> 同主题的强化练习用 `_drill` 后缀，紧跟在本体后面。
 
-> `fill_blank.py` 是**一本会一直长的册子**：以后每道填空题往里面加一块，不新建文件。
+| 编号 | 文件 | 主题 | 起始 | 核心收获 |
+|---|---|---|---|---|
+| 001 | `001_io_input.py` | 输入输出四件套 | 10-07 | `input()` 一次一行；输出格式是第一考点 |
+| 002 | `002_io_input_drill.py` | IO 加练 | 10-07 | 字符串切片、格式化输出 |
+| 003 | `003_sorting.py` | 列表与排序 | 10-07 | `sort()` 原地修改 vs `sorted()` 返回新对象 |
+| 004 | `004_sorting_drill.py` | 排序加练 | 10-07 | 多关键字排序、`key=` 参数 |
+| 005 | `005_simulation.py` | 基础模拟 | 10-08 | 模拟题的步骤拆解 |
+| 006 | `006_binary_search.py` | 二分查找 + 贪心入门 | 10-09 | **两套模板**：命中查找 / 下界查找 |
+| 007 | `007_binary_search_drill.py` | 二分 / 贪心加练 | 10-10 | 上界查找（复用下界骨架）、贪心入门 |
+| 008 | `008_mock_exam.py` | 全真模拟卷 | 10-11 | 三档分层策略：必拿 / 可争 / 放弃 |
+| 009 | `009_recall_test.py` | 闭卷默写卷 | 10-11 | 7 道换皮题，检验是否真掌握 |
+| 010 | `010_contest_replay.py` | 校内赛原题重做 | 10-14 | 校内赛能做的三道题（12/12） |
+| 011 | `011_bitwise.py` | 位运算 + 碎片小题 | 10-17 | 拆位、进制转换、二分下界复用 |
+| 012 | `012_prefix_sum.py` | 前缀和 | 10-18 | `pre[0]=0`，区间和 = `pre[r] - pre[l-1]` |
+| 013 | `013_fill_blank.py` | 结果填空题本 | 10-22 | 蓝桥填空题专用本，**代码 + 手算双验** |
+| 014 | `014_contest_io_template.py` | 竞赛 IO 模板 | 10-06 | 快速读取、多组数据（工具，随时可查） |
+| 015 | `015_practice_return.py` | 返回值专题 | 09-21 | 混淆"原地修改型"与"返回结果型"的代价 |
+| 016 | `016_practice_return_quiz.py` | 返回值自测 | 09-21 | — |
+| 017 | `017_知识点.py` | 笔记碎片（不可运行） | 09-25 | 异常处理伪代码，**故意不是合法 Python** |
+
+> `013_fill_blank.py` 是**一本会一直长的册子**：以后每道填空题往里面加一块，不新建文件。
 
 ---
 
@@ -95,7 +98,7 @@ s = pre[r] - pre[l - 1]
 - **赛制关键**：OI 赛制 —— **提交后无实时反馈**，按测试点给分（暴力解也拿部分分）
 - → 所以两条硬规矩：① 写不出来就交暴力解；② **自己造用例自检**
 
-`mock_exam.py` / `recall_test.py` / `contest_replay.py` / `prefix_sum.py` / `bitwise.py` / `fill_blank.py`
+`008_mock_exam.py` / `009_recall_test.py` / `010_contest_replay.py` / `012_prefix_sum.py` / `011_bitwise.py` / `013_fill_blank.py`
 都内置了自检器。
 
 ---
@@ -103,8 +106,8 @@ s = pre[r] - pre[l - 1]
 ## 运行
 
 ```bash
-python mock_exam.py         # 跑模拟卷全部用例
-python mock_exam.py E       # 只跑 E 题
-python contest_replay.py P1 # 只跑第 1 题
-python fill_blank.py        # 跑填空题本所有块
+python 008_mock_exam.py         # 跑模拟卷全部用例
+python 008_mock_exam.py E       # 只跑 E 题
+python 010_contest_replay.py P1 # 只跑第 1 题
+python 013_fill_blank.py        # 跑填空题本所有块
 ```
