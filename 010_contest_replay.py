@@ -53,16 +53,19 @@ def P1():
     n,m=map(int,input().split())
     data=[]
     for s in range(n):
-        a= list(map(int, input().split()))
-        data.append(a[1:])
-    for i in range(1,m+1):
-        cnt_a=0
-        cnt_b=0
-        for x in data:
-            if i in x:
-                cnt_a+=1
-            cnt_b+=x.count(i)
-        print(cnt_a,cnt_b)
+        d=list(map(int,input().split()))
+        data.append(d)
+    for h in range(1,m+1):
+        a,b=0,0
+        for k in range(n):
+            if h in data[k][1:]:
+                a+=1
+                b+=data[k][1:].count(h)
+        print(a,b)
+
+
+
+
 
 
 
@@ -86,12 +89,16 @@ def P1():
 def P2():
     n=int(input())
     data=list(map(int,input().split()))
-    ans=0
+    a=[]
     for i in data:
-        s=bin(i)[2:]
+        b=bin(i)[2:]
+        a.append(b)
+    pos=0
+    for s in a:
         if s.count("1")==s.count("0"):
-            ans+=1
-    print(ans)
+            pos+=1
+    print(pos)
+
 
 
 

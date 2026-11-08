@@ -363,7 +363,7 @@ def ex12():
     """
     data=list(map(int,input().split()))
     cnt=Counter(data)
-    c=sorted(cnt.items(),key=lambda x:(-x[1],-x[
+    c=sorted(cnt.items(),key=lambda x:(-x[1],-x[0]))   # 次数多的在前；并列时元素大的在前
     print(c[0][0])
     print(c[0][1])
 

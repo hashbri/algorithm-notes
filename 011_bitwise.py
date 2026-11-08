@@ -94,9 +94,10 @@ def Q2():
 #        剩下的是其他 —— 三分支，想想用 if/elif/else 怎么排。
 @problem("Q3")
 def Q3():
-    data=input()
+
+    n=input()
     a,b,c=0,0,0
-    for i in data:
+    for i in n:
         if i.isalpha():
             a+=1
         elif i.isdigit():
@@ -106,6 +107,7 @@ def Q3():
     print(a)
     print(b)
     print(c)
+
 
 
 
