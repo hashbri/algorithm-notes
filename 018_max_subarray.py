@@ -107,7 +107,7 @@ def S2():
             min_price=i
         max_=i-min_price
         if max_>max_profit:
-            max_profit=max
+            max_profit=max_
     print(max_profit)
 
 
