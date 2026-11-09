@@ -54,13 +54,16 @@ def problem(name):
 @problem("S1")
 def S1():
     n=int(input())
-    a=list(map(int,input().split()))
-    res=a[0]
-    pos=0
-    for i in a:
-        pos=max(i,pos+i)
-        res=max(res,pos)
-    print(res)
+    data=list(map(int,input().split()))
+    a=[0]+data
+    b=a[0]
+    best=float('-inf')
+    for i in range(1,n+1):
+        b=max(b+a[i],a[i])
+        best=max(b,best)
+    print(best)
+
+
 
 
 
