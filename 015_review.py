@@ -89,15 +89,15 @@ def R2():
 #        ② 擂台的初值给什么？n=1 的时候你的代码会输出什么？
 @problem("R3")
 def R3():
-    data=list(map(int,input().split()))
-    if len(data)==1:
-        print(0)
-    else:
-        a=[]
-        for i in range(1,len(data)):
-            b=abs(data[i]-data[i-1])
-            a.append(b)
-        print(max(a))
+    a=list(map(int,input().split()))
+    res=0
+    for i in range(1,len(a)):
+        b=abs(a[i]-a[i-1])
+        if b>res:
+            res=b
+    print(res)
+
+
 
 
 # ======================================================================
@@ -117,20 +117,16 @@ def R3():
 @problem("R4")
 def R4():
     data=list(map(int,input().split()))
-    pos=1
-    a=[]
+    best=1
+    c=1
     for i in range(0,len(data)-1):
         if data[i]==data[i+1]:
-            pos+=1
+            c+=1
         else:
-            a.append(pos)
-            pos=1
-    a.append(pos)
-    if a:
-        print(max(a))
-    else:
-        print(1)
-
+            best=max(c,best)
+            c=1
+        best = max(c, best)
+    print(best)
 
 
 
