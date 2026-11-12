@@ -66,9 +66,6 @@ def solve():
             c+=1
         else:
             start=i+1
-            if c>best:
-                best=c
-                d=start
             c=1
         if c>best:
             best=c
