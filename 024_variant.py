@@ -58,8 +58,6 @@ def V1():
         if data[i+1]>data[i]:
             c+=1
         else:
-            if best<c:
-                best=c
             c=1
         if best < c:
             best = c
